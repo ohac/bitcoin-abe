@@ -80,6 +80,8 @@ CHAIN_CONFIG = [
     {"chain":"Hirocoin"},
     {"chain":"Bitleu"},
     {"chain":"Maxcoin"},
+    {"chain":"Sakuracoin"},
+    {"chain":"Sha1coin"},
     #{"chain":"",
     # "code3":"", "address_version":"\x", "magic":""},
     ]
