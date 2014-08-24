@@ -14,15 +14,15 @@
 # License along with this program.  If not, see
 # <http://www.gnu.org/licenses/agpl.html>.
 
-from .LtcScryptChain import LtcScryptChain
+from .Sha256Chain import Sha256Chain
 
-class Sha1coin(LtcScryptChain):
+class Sha1coin(Sha256Chain):
     def __init__(chain, **kwargs):
         chain.name = 'Sha1coin'
         chain.code3 = 'SHA'
         chain.address_version = "\x3f"
         chain.magic = "\xfb\xc0\xb6\xdb"
-        LtcScryptChain.__init__(chain, **kwargs)
+        Sha256Chain.__init__(chain, **kwargs)
 
     datadir_conf_file_name = "sha1coin.conf"
     datadir_rpcport = 9512
