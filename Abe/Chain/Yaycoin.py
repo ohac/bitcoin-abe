@@ -20,7 +20,7 @@ class Yaycoin(Sha256Chain):
     def __init__(chain, **kwargs):
         chain.name = 'yaycoin'
         chain.code3 = 'YAY'
-        chain.address_version = "\x3f"
+        chain.address_version = "\x4e"
         chain.magic = "\xfb\xc0\xb6\xdb"
         Sha256Chain.__init__(chain, **kwargs)
 
